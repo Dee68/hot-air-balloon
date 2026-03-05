@@ -1,0 +1,328 @@
+/* Font Lato and Oswald import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
+/* remove all margins & paddings from all elements unless otherwise stated */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* enables width & height to include both margin & padding */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato,sans-serif;
+    background-color: #fafafa;
+    font-weight: 300;
+    color: #3a3a3a;
+}
+
+/* header,logo and navigation */
+#main-header {
+    width: 100vw;
+    background-image: url('../images/hot-air-ballonns.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#main-header nav {
+    width: 100%;
+    min-height: 60px;
+    background-color: rgba(178, 227, 177, 0.9);
+    border-bottom: #22635d 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+   
+}
+#main-header nav ul {
+    list-style-type: none;
+}
+
+#main-header nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+#main-header nav ul li a {
+    display: inline-block;
+    background-color: rgba(6, 103, 75, 0.8);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #d9e2e1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#main-header nav ul li a:hover{
+    background-color: rgba(6, 103, 75, 0.2);
+    transform: scale(1.1);
+}
+#main-header nav #logo img {
+    width: auto;
+    height: 100px;
+    padding: 2px 2px;
+    margin-left: 5px;
+}
+
+/* global */
+h1,
+h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fafafa;
+}
+
+.content {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px 20px;
+}
+.content > h2 {
+    text-transform: uppercase;
+    font-size: 150%;
+    color: #292F36;
+    margin-bottom: 15px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.how-we-started {
+    width: 50%;
+    height: auto;
+    float: left;
+    clear: both;
+    margin: 0 auto;
+    padding: 8px 8px;
+    line-height: 1.6;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+.how-we-started p::first-letter {
+    text-transform: capitalize;
+    font-size: 110%;
+    font-weight: bold;
+}
+#group {
+    width: 50%;
+    height: auto;
+    float: right;
+    margin-bottom: 50px;
+}
+#group img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* Testimonial */
+#sayings {
+    width: 100%;
+    display: block;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.design {
+    text-align: center;
+    padding: 10px 10px;
+    border: 1px solid transparent;
+    display: block;
+    height: 250px;
+    position: relative;
+    background-color: rgba(178, 227, 177, 0.6);
+    box-shadow: 0 0 10px rgba(178, 227, 177, 0.6);
+    opacity: 1;
+}
+.placeholder {
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+}
+.persons span {
+    font-size: 80%;
+    font-weight: bold;
+}
+.customer {
+    font-size: 110%;
+    font-weight: bold;
+    color: #073b30;
+}
+.client {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+#client1 {
+    background-image: url('../images/person1.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#client2 {
+    background-image: url('../images/family1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#client3 {
+    background-image: url('../images/person3.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#client4 {
+    background-image: url('../images/person4.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* buisness hours */
+#buisness-hours {
+    width: 100%;
+    margin-top: 10px;
+    transform: translate(0);
+    padding-top: 15px;
+    align-items: center;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+#times {
+    padding: 10px 10px;
+    margin-top: 10px;
+    width: 40%;
+    background-color: rgba(178, 227, 177, 0.7);
+    box-shadow: 0 0 10px rgba(178, 227, 177, 0.6);
+    height: 300px;
+    float: left;
+    clear: left;
+}
+#times>h2 {
+    text-align: left;
+    font-size: 140%;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #292F36;
+}
+#times p {
+    text-align: left;
+    display: block;
+    font-weight: 400;
+    line-height: 28px;
+    color: #292F36;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#deviz {
+    float: right;
+    clear: right;
+    margin-top: 10px;
+    padding: 10px 10px;
+    width: 60%;
+    height: 300px;
+    background-color: rgba(178, 227, 177, 0.7);
+    box-shadow: 0 0 10px rgba(178, 227, 177, 0.6);
+    background-image: url('../images/FullLogo_Transparent.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+/* footer */
+#foot {
+    clear: both;
+    display: block;
+    max-height: 170px;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+}
+#foot #copy {
+    height: 40px;
+    background-color: rgba(178, 227, 177, 0.6);
+
+}
+#foot p {
+    font-weight: bold;
+    font-size: 110%;
+    color: #353536;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 5px 5px;
+}
+
+/* move to top icon */
+#to-top {
+    text-decoration: none;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 10000;
+}
+#to-top>span {
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
+    text-decoration: none;
+    line-height: 52px;
+    background-color: rgba(6, 103, 75, 0.7);
+    border: 2px solid transparent;
+    text-align: center;
+}
+#to-top>span:hover {
+    background-color: rgba(6, 103, 75, 0.2)
+}
+#to-top i {
+    color: #111213;
+    font-size: 250%;
+}
+.move_to_top {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+#off {
+    visibility: hidden;
+
+}
+
+ /* about */
+    #about {
+        margin-top: 100px;
+    }
+
+
+/* social icons */
+
+.social-links {
+    text-align: center;
+}
+.social-links>li {
+    display: inline;
+}
+.social-links i {
+    font-size: 160%;
+    color: #292F36;
+    margin: 1%;
+    padding: 5%;
+}
