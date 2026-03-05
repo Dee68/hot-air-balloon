@@ -92,9 +92,17 @@ h2 {
     margin-top: 35px;
     text-align: center;
 }
-
+.about-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
 .how-we-started {
     width: 50%;
+    line-height: 1.6;
+    font-size: 1.2em;
+    /* width: 50%;
     height: auto;
     float: left;
     clear: both;
@@ -102,12 +110,24 @@ h2 {
     padding: 8px 8px;
     line-height: 1.6;
     font-size: 1.2em;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
 }
 .how-we-started p::first-letter {
     text-transform: capitalize;
     font-size: 110%;
     font-weight: bold;
+}
+.video-section {
+    width: 50%;
+}
+
+.video-section video {
+    width: 100%;
+    border-radius: 6px;
+}
+.video-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
 }
 #group {
     width: 50%;
@@ -249,18 +269,24 @@ h2 {
 /* contact page */
 #contact-page {
     width: 100%;
-    align-items: center;
-    margin-top: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 120px;
+    padding: 20px;
+    /* align-items: center;
+    margin-top: 250px; */
 }
 #contact-form {
-    float: left;
+    /* float: left; */
     width: 55%;
     max-height: 550px;
-    border-radius: 10px;
+    /* border-radius: 10px;
     margin-top: 330px;
     margin-left: 8px;
     padding: 5px 5px;
-    margin-bottom: 0;
+    margin-bottom: 0; */
 }
 #contact-form form label {
     font-size: 120%;
@@ -271,11 +297,11 @@ h2 {
     margin-bottom: 15px;
 }
 #contact {
-    float: right;
-    clear: right;
+    /* float: right;
+    clear: right; */
     width: 40%;
-    margin-top: 330px;
-    padding: 10px 5px;
+    /* margin-top: 330px;
+    padding: 10px 5px; */
 }
 #contact p i {
     color: #292F36;
@@ -450,4 +476,25 @@ h2 {
     color: #292F36;
     margin: 1%;
     padding: 5%;
+}
+
+@media (max-width: 768px) {
+
+    #contact-page {
+        flex-direction: column;
+    }
+
+    #contact-form,
+    #contact {
+        width: 100%;
+    }
+    .about-layout {
+        flex-direction: column;
+    }
+
+    .how-we-started,
+    .video-section {
+        width: 100%;
+    }
+
 }
