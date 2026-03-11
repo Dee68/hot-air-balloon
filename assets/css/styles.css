@@ -104,6 +104,12 @@ h2 {
     letter-spacing: 4px;
     /* color: #fafafa; */
 }
+iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    border: none;
+}
 
 .content {
     margin-left: 5%;
@@ -584,6 +590,10 @@ h2 {
 }
 .our-services .content {
     height: 100%;
+}
+.tour-viewer{
+    width:80%;
+    margin:auto;
 }
 #tour-with-friends {
     float: left;
